@@ -1,12 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Himawari-shin</title>
+    <title>Home work</title>
+    <Style>
+        * {
+            box-sizing: border-box;
+            /* 控制換算padding的誤差值 */
+        }
+        body{
+            margin: 0%;background-color: beige;
+            /* 針對標籤下屬性,此用於網頁調整邊距+可上顏色*/
+        }
+
+        .black {
+            width: 600px;
+            height: 800px;
+            background-color: black;
+            padding: 10px;
+            /* padding:是四邊內推各10px,四邊不等距直接打 10px(上)20px(右)x下x左 */
+            margin: 0 auto;
+            /* 常用於最外層水平置中 */
+        }
+
+        .rad {
+            width: 100%;
+            height: calc(200px - 20px);
+            background-color: crimson;
+            margin-bottom: 10px;
+            /* margin是外推10pcs(設定數值直接外推10px) */
+        }
+
+        .green {
+            display: flex;
+            /* display是讓綠色(容器)控制裡面的內容物,只會在綠色範圍內 */
+            width: 100%;
+            height: 300px;
+            background-color: darkgreen;
+        }
+
+        .g1-l {
+            width: 30%;
+            height: 100%;
+            /* 在綠色裡面的比例數值 */
+            background-color: rgb(255, 255, 255);
+            margin-right: 10px;
+        }
+
+        .g2-r {
+            width: 70%;
+            height: 100%;
+            background-color: rgb(222, 236, 16);
+        }
+
+        .purple {
+            width: 100%;
+            height: calc(30% - 10px);
+            background-color: purple;
+            margin-bottom: 10px;
+        }
+
+        .purple2 {
+            width: 100%;
+            height: calc(30% - 10px);;
+            background-color: rgb(68, 0, 68);
+            margin-bottom: 10px;
+        }
+
+        .purple3 {
+            width: 100%;
+            height: 40%;
+            background-color: rgb(27, 0, 27);
+        }
+
+        .yellow {
+            width: 100%;
+            height: calc(300px - 20px);
+            background-color: rgb(251, 255, 0);
+            margin-top: 10px;
+
+        }
+    </style>
+
 </head>
+
 <body>
-    66666
+    <!-- body是網頁整個畫面顯示內容區 -->
+    <!-- 同層級的推距margin,上層推下層用padding -->
+    <div class="black">
+        <div class="rad"></div>
+        <div class="green">
+            <div class="g1-l"></div>
+            <div class="g2-r">
+                <div class="purple"></div>
+                <div class="purple2"></div>
+                <div class="purple3"></div>
+            </div>
+
+
+
+        </div>
+        <div class="yellow"></div>
+    </div>
+
 </body>
+
 </html>
